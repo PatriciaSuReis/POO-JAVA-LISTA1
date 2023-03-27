@@ -128,7 +128,6 @@ public class Main {
 		  	leia.nextLine();
 		} 
 		while(leia.nextLine().equalsIgnoreCase("s"));
-		//estar dando erro no exercicio 2
 		System.out.println("===============================================");
 		System.out.println("Bye!");
 		

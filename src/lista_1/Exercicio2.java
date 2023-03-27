@@ -56,9 +56,7 @@ public class Exercicio2 {
 			System.out.println("Nome: " + nome);
 			System.out.println("Sexo: " + sexo);
 			System.out.println("Estados civil: " + estadoCivil);
-			System.out.println("Anos de casada: " + anos);
-			
-			sc.close();
+			System.out.println("Anos de casada: " + anos);	
 		} 
 		else 
 		{
