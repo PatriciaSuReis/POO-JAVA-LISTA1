@@ -8,15 +8,14 @@ public class Exercicio6 {
 	Boolean x;
 	Boolean y;
 	
-	public void verdadeOuFalso(Boolean x, Boolean y) {
+	public boolean verdadeOuFalso(Boolean x, Boolean y) {
 		if (x == y && x == true) {
 			System.out.println("\nAmbos sao VERDADEIROS.");
+			return true;
 		}
 		else if (y == x && y == false) {
 			System.out.println("\nAmbos sao FALSOS.");
-		}
-		else {
-			System.out.println("\nUm e VERDADEIRO e o outro FALSO.");
+			return false;
 		}
 	}
 	
