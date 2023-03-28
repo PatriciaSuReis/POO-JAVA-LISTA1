@@ -98,23 +98,92 @@ public class Main {
 					break;
 					
 				case 7:
+					System.out.println("Digite um numero inteiro:");
+						int var = leia.nextInt();
+						
+					Exercicio7 exer7 = new Exercicio7();
+					
+					exer7.setVar(var);
+					exer7.someParOuImpar();
 					
 					break;
 				
 				case 8:
-					System.out.println("-----------------------------------------------");
+					System.out.println("Digite tres numeros inteiros, que"
+							+ "\nserao colocados em ordem decrescente.");
+					System.out.print("\n1 - ");
+						int a = leia.nextInt();
+					System.out.print("2 - ");
+						int b = leia.nextInt();
+					System.out.print("3 - ");
+						int c = leia.nextInt();
+					
+					Exercicio8 exer8 = new Exercicio8();
+					
+					exer8.setA(a);
+					exer8.setB(b);
+					exer8.setC(c);
+					exer8.diferentesEDecrescente();
+						
 					break;
 				
 				case 9:
-					System.out.println("-----------------------------------------------");
+					System.out.println("++  Calculo IMC  ++\n");
+					System.out.println("Informe seu peso: ");
+						double peso = leia.nextDouble();
+					System.out.println("Informe sua altura: ");
+						double altura = leia.nextDouble();
+						
+					Exercicio9 exer9 = new Exercicio9();
+					
+					exer9.setPeso(peso);
+					exer9.setAltura(altura);
+					exer9.calculoIMC();
+						
 					break;
 				
 				case 10:
-					System.out.println("-----------------------------------------------");
+					System.out.println("++++++++++++++++++++  PAGAMENTO ++++++++++++++++++++");
+					System.out.println("\n Condicao de pagamento:\n"
+									+ "\n  1- A vista em dinheiro ou cheque, 10% de desconto."
+									+ "\n  2- A vista no cartao de credito, 15% de desconto."
+									+ "\n  3- Em duas vezes, sem juros."
+									+ "\n  4- Em tres vezes, juros de 10%. \n");
+					System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++");
+					System.out.print("Sua escolhar: ");
+						int escolha = leia.nextInt();
+					System.out.print("\nValor do produto: \nR$ ");
+						double valor = leia.nextDouble();
+						
+					Exercicio10 exer10 = new Exercicio10();
+					
+					exer10.setEscolha(escolha);
+					exer10.setValorInicial(valor);
+					exer10.condicaoDoPagamento();
+					
 					break;
 				
 				case 11:
-					System.out.println("-----------------------------------------------");
+					System.out.println("++++++++++++  AVALIACAO DO ALUNO ++++++++++++++");
+					System.out.print("\nNumero do aluno: ");
+						int numeroAluno = leia.nextInt();
+					System.out.print("Nota 1: ");
+						double nota1 = leia.nextDouble();
+					System.out.print("Nota 2: ");
+						double nota2 = leia.nextDouble();
+					System.out.print("Nota 3: ");
+						double nota3 = leia.nextDouble();
+					System.out.println("\n+++++++++++++++++++++++++++++++++++++++++++++++");
+					
+					Exercicio11 exer11 = new Exercicio11();
+					
+					exer11.setNumeroAluno(numeroAluno);
+					exer11.setNota1(nota1);
+					exer11.setNota2(nota2);
+					exer11.setNota3(nota3);
+					
+					exer11.situacaoDoAluno();
+					
 					break;
 					
 				default:
