@@ -18,7 +18,7 @@ public class Exercicio11 {
 	 * ● >= 40 e < 60 D
 	 * ● < 40 E*/
 	
-	private int numeroAluno;
+	private String numeroAluno;
 	private double nota1;
 	private double nota2;
 	private double nota3;
@@ -52,7 +52,7 @@ public class Exercicio11 {
 		
 		System.out.println("++++++++++++  AVALIACAO DO ALUNO ++++++++++++++");
 		System.out.print("\nNumero do aluno: ");
-			String numeroAluno = leia.nextLine();
+			numeroAluno = leia.nextLine();
 		System.out.print("Nota 1: ");
 			nota1 = leia.nextDouble();
 		System.out.print("Nota 2: ");
