@@ -166,13 +166,15 @@ public class Main {
 				case 11:
 					System.out.println("++++++++++++  AVALIACAO DO ALUNO ++++++++++++++");
 					System.out.print("\nNumero do aluno: ");
-						int numeroAluno = leia.nextInt();
+						String numeroAluno = leia.nextInt();
 					System.out.print("Nota 1: ");
 						double nota1 = leia.nextDouble();
 					System.out.print("Nota 2: ");
 						double nota2 = leia.nextDouble();
 					System.out.print("Nota 3: ");
 						double nota3 = leia.nextDouble();
+					System.out.print("ME: ");
+						double me = leia.nextDouble();
 					System.out.println("\n+++++++++++++++++++++++++++++++++++++++++++++++");
 					
 					Exercicio11 exer11 = new Exercicio11();
@@ -181,6 +183,7 @@ public class Main {
 					exer11.setNota1(nota1);
 					exer11.setNota2(nota2);
 					exer11.setNota3(nota3);
+					exer11.setMe(me);
 					
 					exer11.situacaoDoAluno();
 					
