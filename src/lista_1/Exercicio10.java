@@ -33,6 +33,8 @@ public class Exercicio10 {
 		case 1:
 			valorDesconto = valorInicial * 10 / 100;
 			valorFinal = valorInicial - valorDesconto;
+			/*Professor:
+			 * valorDesconto = valorInical - 0.1 * valorInicial; */
 			
 			System.out.print("Valor do produto: R$ " + valorInicial + "\n");
 			System.out.print("Desconto: R$ " + valorDesconto + "\n");
