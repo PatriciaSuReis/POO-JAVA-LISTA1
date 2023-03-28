@@ -42,30 +42,54 @@ public class Exercicio11 {
 		this.nota3 = nota3;
 	}
 	
+	public void setMediaExercicio(double mediaExercicio) {
+		this.mediaExercicio = mediaExercicio;
+	}
+	
 	//metodo
 	public void situacaoDoAluno() {
-		mediaExercicio = (nota1 + nota2 + nota3) / 3;
+		Scanner leia = new Scanner(System.in);
+		
+		System.out.println("++++++++++++  AVALIACAO DO ALUNO ++++++++++++++");
+		System.out.print("\nNumero do aluno: ");
+			String numeroAluno = leia.nextLine();
+		System.out.print("Nota 1: ");
+			nota1 = leia.nextDouble();
+		System.out.print("Nota 2: ");
+			nota2 = leia.nextDouble();
+		System.out.print("Nota 3: ");
+			nota3 = leia.nextDouble();
+		System.out.print("ME: ");
+			mediaExercicio = leia.nextDouble();
+		System.out.println("\n+++++++++++++++++++++++++++++++++++++++++++++++");
+		
 		mediaAproveitamento = (nota1 + nota2 * 2 + nota3 * 3 + mediaExercicio)/ 7;
 		
 		System.out.println("Numero do aluno: " + numeroAluno);
 		System.out.printf("\nMedia de Exercicios: %.2f \n", mediaExercicio);
-		System.out.printf("Media de Aproveitamento: %.2f \n\n", mediaAproveitamento);
-		
+		System.out.printf("Media de Aproveitamento: %.2f \n\n", mediaAproveitamento);	
+	}
+	
+	public String aprovadoReprovado() {
 		if (mediaAproveitamento >= 9.0) {
 			System.out.println("Aluno APROVADO.");
+			return "A";
 		}
 		else if (mediaAproveitamento >= 7.5 && mediaAproveitamento < 9.0) {
 			System.out.println("Aluno APROVADO.");
+			return "B";
 		}
 		else if (mediaAproveitamento >= 6.0 && mediaAproveitamento < 7.5) {
 			System.out.println("Aluno APROVADO.");
+			return "C";
 		}
 		else if (mediaAproveitamento >= 4.0 && mediaAproveitamento < 6.0) {
 			System.out.println("Aluno REPROVADO.");
+			return "D";
 		}
-		else if (mediaAproveitamento < 4.0) {
+		else {
 			System.out.println("Aluno REPROVADO.");
+			return "E";
 		}
-		
 	}
 }
