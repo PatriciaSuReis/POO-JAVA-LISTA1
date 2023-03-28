@@ -183,7 +183,7 @@ public class Main {
 					exer11.setNota1(nota1);
 					exer11.setNota2(nota2);
 					exer11.setNota3(nota3);
-					exer11.setMe(me);
+					exer11.setMediaExercicio(me);
 					
 					exer11.situacaoDoAluno();
 					
